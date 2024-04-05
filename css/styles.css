@@ -1,20 +1,26 @@
 ul{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
-   list-style-type: none;
-   
+    list-style-type: none;
 }
-
-li {
-    text-decoration: none;
+.belgrano-regular {
+    font-family: "Belgrano", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+header {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-
-header{
-    background-color: rgb(147, 144, 144);
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-body{
-background-color: bisque;
+nav{
+    display: flex;
+    padding: 20px;
+    flex: 1;
+    text-align: right;
 }
