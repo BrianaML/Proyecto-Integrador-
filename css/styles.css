@@ -1,5 +1,24 @@
-ul{
+
+.container{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: left;
     list-style-type: none;
+}
+body{
+    background-color: rgb(216, 218, 202);
+    margin: 0%;
+    padding: 0%;
+}
+li{
+    list-style-type: none;  
+}
+
+producto-1{
+    width: 200px;
+    height: 200px;
 }
 .belgrano-regular {
     font-family: "Belgrano", serif;
@@ -7,11 +26,58 @@ ul{
     font-style: normal;
 }  
 header {
-    max-width: 1300px;
+    background-image:url(../imgs/index.img/NUBIKK\ -\ For\ Every\ Identity.jpg);
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0%;
+    padding-right: 100%;
+    border: solid red;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
 }
+h1{
+    align-items: start;
+}
+.pick{
+    
+    flex-direction: row;
+    align-items:center;
+    padding-left: 0%;
+    border: 2px solid purple;
+
+}
+
+ul {
+    display: flex;
+}
+ul4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid orange;
+    
+}
+
+.logo{
+    size: 100%;
+    position: left;
+    background-size: 100%;
+    border: 2px solid blue;
+
+}
+
+.logo img {
+    size: 2%;
+    position: left;
+    height: 10%;
+    border: 2px solid greenyellow;
+}
+
 .container{
     max-width: 1300px;
     margin: auto;
@@ -19,6 +85,7 @@ header {
     padding-right: 25px;
 }
 nav{
+    
     display: flex;
     padding: 20px;
     flex: 1;

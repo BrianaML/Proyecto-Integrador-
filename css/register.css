@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(181, 158, 131);
+}
+form{
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
