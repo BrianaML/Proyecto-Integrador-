@@ -180,75 +180,36 @@ footer ul{
 .bottom{
     scroll-behavior:smooth;
 }
-/*
-body{
-    background-color: rgb(216, 218, 202);
-    margin: 0%;
-    padding: 0%;
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
 }
-li{
-    list-style-type: none;  
-}
-
-producto-1{
-    width: 200px;
-    height: 200px;
-}
-.belgrano-regular {
-    font-family: "Belgrano", serif;
-    font-weight: 400;
-    font-style: normal;
-}  
-header {
-    background-image:url(../imgs/index.img/NUBIKK\ -\ For\ Every\ Identity.jpg);
-    background-attachment: inherit;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin: auto;
-    padding-left: 0%;
-    padding-right: 100%;
-    border: solid red;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    list-style-type: none;
-}
-h1{
-    align-items: start;
-}
-.pick{
-    
-    flex-direction: row;
-    align-items:center;
-    padding-left: 0%;
-    border: 2px solid purple;
-
-}
-
-ul {
-    display: flex;
-}
-ul4{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px solid orange;
-    
-}
-
-.logo{
-    size: 100%;
-    position: left;
-    background-size: 100%;
-    border: 2px solid blue;
-
-}
-
-.logo img {
-    size: 2%;
-    position: left;
-    height: 10%;
-    border: 2px solid greenyellow;
-}
-*/
+/*=============MEDIAS QUERIES=============*/
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left:0;
+        background: #bbb9b9;
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #ffffff;
+    }
+    .menu-icon{
+        display: block;
+    }}
+@media only screen and (max-width: 600px){
+    .col{
+        text-align: center;
+    }
+    .col-2,.col-3, .col-4{
+        flex-basis: 100%;
+    }}
