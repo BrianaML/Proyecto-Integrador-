@@ -29,10 +29,10 @@ header {
     background-image:url(../imgs/index.img/NUBIKK\ -\ For\ Every\ Identity.jpg);
     background-attachment: inherit;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 80%;
     margin: auto;
     padding-left: 0%;
-    padding-right: 100%;
+    padding-right: 100;
     border: solid red;
     flex-wrap: wrap;
     flex-direction: row;
