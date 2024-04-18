@@ -212,4 +212,62 @@ footer ul{
     }
     .col-2,.col-3, .col-4{
         flex-basis: 100%;
-    }}
+    }
+    .producto{
+        text-align: left;
+    }
+.producto .col-2{
+    padding: 20px 0;
+}
+.producto h1{
+    font-size: 26px;
+    line-height: 32px;
+}}
+/*==========vemos========*/
+
+.col-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+
+/* ------------------- PRODUCTO------------*/
+
+.producto{
+    margin-top: 80px;
+}
+.producto .col-2{
+    padding: 20px;
+}
+.producto .col-2 img{
+    padding: 0;
+}
+.producto h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.producto select{
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+}
+.producto input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #cb9191;
+}
+input:focus{
+    outline: none;
+}
+.s-img-col{
+    display: flex;
+    justify-content: space-between;
+}
+.s-img-col-2{
+    flex-basis: 33%;
+    cursor: pointer;
+}
