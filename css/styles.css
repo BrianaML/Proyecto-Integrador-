@@ -92,9 +92,7 @@ header.col{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    background-image: url(https://img.freepik.com/free-vector/abstract-outlined-polygonal-shapes-background_1053-442.jpg);
-}
-
+    background-image: url(https://img.freepik.com/free-vector/abstract-outlined-polygonal-shapes-background_1053-442.jpg);}
 .col-4{
     flex-basis: 20%;
     padding: 10px;
@@ -191,44 +189,7 @@ footer ul{
     margin-left: 20px;
     display: none;
 }
-/*=============MEDIAS QUERIES=============*/
-@media only screen and (max-width: 800px){
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left:0;
-        background: #bbb9b9;
-        width: 100%;
-    }
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color: #ffffff;
-    }
-    .menu-icon{
-        display: block;
-    }}
-@media only screen and (max-width: 600px){
-    .col{
-        text-align: center;
-    }
-    .col-2,.col-3, .col-4{
-        flex-basis: 100%;
-    }
-    .producto{
-        text-align: left;
-    }
-.producto .col-2{
-    padding: 20px 0;
-}
-.producto h1{
-    font-size: 26px;
-    line-height: 32px;
-}}
+
 /*==========vemos========*/
 
 .col-2{
@@ -442,16 +403,7 @@ input:focus{
     margin-right: 5%; 
 }
 hr{
-    border: 100%;
-}
-
-@media screen and (max-width: 850px){
-    container {display: block;
-}}
-body{
-    background-color: rgb(216, 218, 202);
-}
-
+    border: 100%;}
 
 /*===============LOGIN===============*/
 
@@ -504,4 +456,82 @@ body{
     padding: 8px 30px;
     border-radius: 30px;
     background: radial-gradient(#f1b6b6,#e4bdbd);
+}
+
+/*
+.producto{
+    margin-top: 80%;
+}
+.col img{
+    padding: 0;
+}
+.col{
+    padding: 20px;
+}
+.producto h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.producto select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.producto input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+li{
+    list-style: none;
+}*/
+
+/*=============MEDIAS QUERIES=============*/
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left:0;
+        background: #bbb9b9;
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #ffffff;
+    }
+    .menu-icon{
+        display: block;
+    }}
+@media only screen and (max-width: 600px){
+    .col{
+        text-align: center;
+    }
+    .col-2,.col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .producto{
+        text-align: left;
+    }
+.producto .col-2{
+    padding: 20px 0;
+}
+.producto h1{
+    font-size: 26px;
+    line-height: 32px;
+}}
+
+@media screen and (max-width: 850px){
+    container {display: block;
+}}
+body{
+    background-color: rgb(216, 218, 202);
 }
