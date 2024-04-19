@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media(max-width:460px){
 body{
     font-family: "Belgrano", sans-serif;
     /*font-weight: 400;
     font-style: normal;*/
     background-color: rgb(255 255 255);
+}
 }
 .logo{
     display: flex;
@@ -259,7 +261,6 @@ input:focus{
 .p-container main{
     background-image: url(https://i.pinimg.com/564x/0b/e0/8a/0be08a3a33cb846ba5c985b524e9af09.jpg);
 }
-background-image: url(https://img.freepik.com/free-vector/abstract-outlined-polygonal-shapes-background_1053-442.jpg);
 
 /*===============CART===============*/
 
@@ -481,3 +482,30 @@ hr{
     background: radial-gradient(#f1b6b6,#e4bdbd);
 }
 /*==================REGISTER===================*/
+.register{
+    background: #fff;
+    width: 325px;
+    height: 470px;
+    position: relative;
+    text-align: center;
+    padding: 70px 0 0 0;
+    margin: auto;
+    box-shadow: 10px 20px 20px 30px rgba(0,0,0,0.1);
+}
+/*==================RECOVER===================*/
+.recover{
+    background: #fff;
+    width: 325px;
+    height: 350px;
+    position: relative;
+    text-align: center;
+    padding: 70px 0 0 0;
+    margin: auto;
+    box-shadow: 10px 20px 20px 30px rgba(0,0,0,0.1); 
+}
+.recov-fondo{
+    padding: 50px;
+    background: radial-gradient(#fff,#618b8a);
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200616/pngtree-white-block-glow-background-image_339296.jpg);
+    background-size: 1800px;
+}
