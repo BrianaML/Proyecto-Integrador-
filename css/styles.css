@@ -131,12 +131,25 @@ h3{
 .col-4:hover{
     transform: translateY(-5px);
 }
+.col-4 img{
+    height: 275px;
+    width: 100%;
+}
 button{
     border-style: none;
     display: inline-block;
     background: #cb9191;
     color: #fff;
     padding: 8px 15px;
+    margin: 15px 0;
+    border-radius: 30px;
+}
+.ver-1{
+    border-style: none;
+    display: inline-block;
+    background: #6c6c6c42;
+    color: #fff;
+    padding: 8px 60px;
     margin: 15px 0;
     border-radius: 30px;
 }
@@ -466,50 +479,4 @@ hr{
     padding: 8px 30px;
     border-radius: 30px;
     background: radial-gradient(#f1b6b6,#e4bdbd);
-}
-/*=============MEDIAS QUERIES=============*/
-@media only screen and (max-width: 800px){
-nav ul{
-    position: absolute;
-    top: 70px;
-    left:0;
-    background: #bbb9b9;
-    width: 100%;
-}
-nav ul li{
-    display: block;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-    nav ul li a{
-    color: #ffffff;
-    }
-    .menu-icon{
-        display: block;
-    }}
-@media only screen and (max-width: 600px){
-.col{
-    text-align: center;
-    }
-.col-2,.col-3, .col-4{
-    flex-basis: 100%;
-    }
-.producto{
-    text-align: left;
-    }
-.producto .col-2{
-    padding: 20px 0;
-}
-.producto h1{
-    font-size: 26px;
-    line-height: 32px;
-}
-.talles{
-    justify-self: center;
-}}
-
-@media screen and (max-width: 850px){
-    container {display: block;
-}
 }
