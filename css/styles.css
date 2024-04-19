@@ -44,6 +44,7 @@ p{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 0%;
 }
 .col-2{
     flex-basis: 50%;
@@ -87,11 +88,13 @@ header.col{
     width: 100%;
 }
 .p-container{
-    max-width: 1080px;
+    max-width: 100%;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    background-image: url(https://img.freepik.com/free-vector/abstract-outlined-polygonal-shapes-background_1053-442.jpg);
 }
+
 .col-4{
     flex-basis: 20%;
     padding: 10px;
@@ -235,10 +238,6 @@ footer ul{
 
 
 /* ------------------- PRODUCTO------------*/
-
-.producto{
-    margin-top: 80px;
-}
 .producto .col-2{
     padding: 20px;
 }
@@ -273,6 +272,9 @@ input:focus{
 .s-img-col-2{
     flex-basis: 33%;
     cursor: pointer;
+}
+.p-container main{
+    background-image: url(https://i.pinimg.com/564x/0b/e0/8a/0be08a3a33cb846ba5c985b524e9af09.jpg);
 }
 
 /*===============CART===============*/
