@@ -153,6 +153,15 @@ button{
     margin: 15px 0;
     border-radius: 30px;
 }
+.index-des{
+    font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
+.cent{
+    text-align: start;
+    padding-top: 7px;
+}
 
 /*======================FOOTER============================*/
 footer{
@@ -203,6 +212,8 @@ footer ul{
     display: none;
 }
 
+
+
 /*==========vemos========*/
 
 .col-2{
@@ -210,6 +221,7 @@ footer ul{
     margin: 100px auto 50px;
 }
 
+/*===========CATEGORIA===============*/
 
 /* ------------------- PRODUCTO------------*/
 .producto .col-2{
@@ -481,3 +493,50 @@ hr{
     background: radial-gradient(#f1b6b6,#e4bdbd);
 }
 /*==================REGISTER===================*/
+
+/*===========RESPONSIVE==============*/
+@media only screen and(max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #bbb9b9;
+        width: 10px;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #ffffff;
+    }
+    .menu-icon{
+        display: block;
+    }
+}
+@media only screen and(max-width: 600px){
+    .col{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .producto{
+        text-align: left;
+    }
+    .producto .col-2{
+        padding: 20px 0;
+    }
+    .producto h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+@media screen and (max-width: 850px){
+    container{display: block;
+}}
+body{
+    background-color: #ffffff;
+}
