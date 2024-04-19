@@ -518,3 +518,14 @@ body{
     border-radius: 30px;
     background: radial-gradient(#f1b6b6,#e4bdbd);
 }
+/*===============Register===============*/
+.register{
+background: #fff;
+width: 325px;
+height: 465px;
+position: relative;
+text-align: center;
+padding: 70px 0 0 0;
+margin: auto;
+box-shadow: 10px 20px 20px 30px rgba(0,0,0,0.1);
+}
