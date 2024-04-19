@@ -1,4 +1,3 @@
-/* */
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +7,7 @@ body{
     font-family: "Belgrano", sans-serif;
     /*font-weight: 400;
     font-style: normal;*/
+    background-color: rgb(255 255 255);
 }
 .logo{
     display: flex;
@@ -92,9 +92,7 @@ header.col{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    background-image: url(https://img.freepik.com/free-vector/abstract-outlined-polygonal-shapes-background_1053-442.jpg);
 }
-
 .col-4{
     flex-basis: 20%;
     padding: 10px;
@@ -204,44 +202,7 @@ footer ul{
     margin-left: 20px;
     display: none;
 }
-/*=============MEDIAS QUERIES=============*/
-@media only screen and (max-width: 800px){
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left:0;
-        background: #bbb9b9;
-        width: 100%;
-    }
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color: #ffffff;
-    }
-    .menu-icon{
-        display: block;
-    }}
-@media only screen and (max-width: 600px){
-    .col{
-        text-align: center;
-    }
-    .col-2,.col-3, .col-4{
-        flex-basis: 100%;
-    }
-    .producto{
-        text-align: left;
-    }
-.producto .col-2{
-    padding: 20px 0;
-}
-.producto h1{
-    font-size: 26px;
-    line-height: 32px;
-}}
+
 /*==========vemos========*/
 
 .col-2{
@@ -275,6 +236,15 @@ footer ul{
     margin-right: 10px;
     border: 1px solid #cb9191;
 }
+.boton-producto{
+    border-style: none;
+    display: inline-block;
+    color: #fff;
+    border-radius: 30px;
+}
+.boton-producto-color {
+    color: #fff;
+}
 input:focus{
     outline: none;
 }
@@ -289,6 +259,7 @@ input:focus{
 .p-container main{
     background-image: url(https://i.pinimg.com/564x/0b/e0/8a/0be08a3a33cb846ba5c985b524e9af09.jpg);
 }
+background-image: url(https://img.freepik.com/free-vector/abstract-outlined-polygonal-shapes-background_1053-442.jpg);
 
 /*===============CART===============*/
 
@@ -455,16 +426,7 @@ input:focus{
     margin-right: 5%; 
 }
 hr{
-    border: 100%;
-}
-
-@media screen and (max-width: 850px){
-    container {display: block;
-}}
-body{
-    background-color: rgb(216, 218, 202);
-}
-
+    border: 100%;}
 
 /*===============LOGIN===============*/
 
@@ -517,15 +479,4 @@ body{
     padding: 8px 30px;
     border-radius: 30px;
     background: radial-gradient(#f1b6b6,#e4bdbd);
-}
-/*===============Register===============*/
-.register{
-background: #fff;
-width: 350px;
-height: 500px;
-position: relative;
-text-align: center;
-padding: 70px 0 0 0;
-margin: auto;
-box-shadow: 10px 20px 20px 30px rgba(0,0,0,0.1);
 }
