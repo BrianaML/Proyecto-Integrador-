@@ -211,9 +211,6 @@ footer ul{
     margin-left: 20px;
     display: none;
 }
-
-
-
 /*==========vemos========*/
 
 .col-2{
@@ -222,7 +219,44 @@ footer ul{
 }
 
 /*===========CATEGORIA===============*/
-
+.catego{
+    padding: 20px 0 20px 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    /*text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    flex-wrap: nowrap;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.body-cat{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.cate-titu{
+    margin: 0 auto 30px;
+    text-align: center;
+    position: relative;
+    line-height: 70px;
+    color: #555;
+    padding-top: 20px;
+    font-size: 30px;
+}
+.cate-titu::after{
+    content:'';
+    background: #bebab8;
+    width: 600px;
+    height: 7px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /* ------------------- PRODUCTO------------*/
 .producto .col-2{
     padding: 20px;
@@ -271,8 +305,6 @@ input:focus{
 .p-container main{
     background-image: url(https://i.pinimg.com/564x/0b/e0/8a/0be08a3a33cb846ba5c985b524e9af09.jpg);
 }
-background-image: url(https://img.freepik.com/free-vector/abstract-outlined-polygonal-shapes-background_1053-442.jpg);
-
 /*===============CART===============*/
 
 .cart-pag{
@@ -493,9 +525,55 @@ hr{
     background: radial-gradient(#f1b6b6,#e4bdbd);
 }
 /*==================REGISTER===================*/
+.register{
+    background: #fff;
+    width: 325px;
+    position: relative;
+    text-align: center;
+    padding: 70px 0 50px 0;
+    margin: auto;
+    box-shadow: 10px 20px 20px 30px rgba(0,0,0,0.1);
+}
+.check{
+    padding-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.check span{
+    padding-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.terminos{
+    font-style: oblique;
+    font-size: 15px;
+    color: #544e4e;
+}
+/*==================RECOVER===================*/
+.recover{
+    background: #fff;
+    width: 325px;
+    height: 350px;
+    position: relative;
+    text-align: center;
+    padding: 70px 0 0 0;
+    margin: auto;
+    box-shadow: 10px 20px 20px 30px rgba(0,0,0,0.1); 
+}
+.recov-fondo{
+    padding: 50px;
+    background: radial-gradient(#fff,#618b8a);
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200616/pngtree-white-block-glow-background-image_339296.jpg);
+    background-size: 1800px;
+}
+@media(max-width:460px){
 
-/*===========RESPONSIVE==============*/
-@media only screen and(max-width: 800px){
+}
+/*=================RESPONSIVE=================*/
+@media only screen and(max-width:320px){
+    img{
+        weight:200px;
+    }
     nav ul{
         position: absolute;
         top: 70px;
@@ -515,10 +593,11 @@ hr{
     .menu-icon{
         display: block;
     }
-}
-@media only screen and(max-width: 600px){
     .col{
         text-align: center;
+    }
+    h1 {
+        font-size: 42px;
     }
     .col-2, .col-3, .col-4{
         flex-basis: 100%;
@@ -532,11 +611,4 @@ hr{
     .producto h1{
         font-size: 26px;
         line-height: 32px;
-    }
-}
-@media screen and (max-width: 850px){
-    container{display: block;
-}}
-body{
-    background-color: #ffffff;
-}
+    }}
