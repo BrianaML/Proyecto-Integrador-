@@ -3,13 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media(max-width:460px){
 body{
     font-family: "Belgrano", sans-serif;
     /*font-weight: 400;
     font-style: normal;*/
     background-color: rgb(255 255 255);
-}
 }
 .logo{
     display: flex;
@@ -313,8 +311,10 @@ input:focus{
     text-align: center;
     width: 15%;
 }
+@media(max-width:460px){
 .es{
     height: 100%;
+}
 }
 .es-eso{
     line-height: 10px;
@@ -508,4 +508,9 @@ hr{
     background: radial-gradient(#fff,#618b8a);
     background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200616/pngtree-white-block-glow-background-image_339296.jpg);
     background-size: 1800px;
+}
+@media screen and (max-width:480px) {
+    body{
+        flex-direction: column;
+    }
 }
