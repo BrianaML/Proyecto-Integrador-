@@ -555,13 +555,18 @@ hr{
 /*==================RECOVER===================*/
 .recover{
     background: #fff;
-    width: 325px;
-    height: 350px;
+    height: 400px;
+    width: 450px;
     position: relative;
     text-align: center;
     padding: 70px 0 0 0;
-    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     box-shadow: 10px 20px 20px 30px rgba(0,0,0,0.1); 
+}
+.contiene{
+    display: flex;
+    justify-content: center;
 }
 .recov-fondo{
     padding: 50px;
@@ -569,19 +574,25 @@ hr{
     background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200616/pngtree-white-block-glow-background-image_339296.jpg);
     background-size: 1800px;
 }
+.keys{
+    padding: 0 20px 0 20px;
+    top: 130px;
 
+}
+.bold{
+    font-weight: 800;
+    color: #2d2d32;
+}
 /*=================RESPONSIVE=================*/
-@media only screen and(max-width:320px){
+@media screen and (max-width:321px){
     img{
         width:200px;
-
     }
     nav ul{
-        position: absolute;
         top: 70px;
         left: 0;
         background: #bbb9b9;
-        width: 10px;
+        width:323px;
     }
     nav ul li{
         display: block;
@@ -598,7 +609,7 @@ hr{
     .col{
         text-align: center;
     }
-    .col-2 h1 {
+    .col-2 h1{
         font-size: 40px;
     }
     .col-2, .col-3, .col-4{
@@ -613,11 +624,13 @@ hr{
     .producto h1{
         font-size: 26px;
         line-height: 32px;
-    }}
-    @media(max-width:460px){
-    header{
-        body{
-            flex-direction: column;
+    }
+    .col-2 img {
+        max-width: 85%;
+    }
+    .cent {
+        text-align: center;
+    .more{
+        
     }
     }
-}
