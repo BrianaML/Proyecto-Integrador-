@@ -315,6 +315,7 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .cart-container{
     /*width: 70%;*/
@@ -354,7 +355,7 @@ input:focus{
 }
 .cart-img{
     text-align: center;
-    width: 15%;
+    
 }
 @media(max-width:460px){
 .es{
@@ -366,7 +367,7 @@ input:focus{
     font-size: 32px;
     font-weight: 800;
     color: #202020;
-    padding: 10px 12px 12px 12px;
+    padding: 10px 10px 12px 12px;
 }
 .q-es-eso{
     line-height: 16px;
@@ -405,7 +406,7 @@ input:focus{
 }
 .precio{
     height: 100%;
-    text-align: right;
+    text-align: center;
 }
 .pago{
     font-weight: 800;
@@ -568,13 +569,12 @@ hr{
     background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200616/pngtree-white-block-glow-background-image_339296.jpg);
     background-size: 1800px;
 }
-@media(max-width:460px){
 
-}
 /*=================RESPONSIVE=================*/
 @media only screen and(max-width:320px){
     img{
-        weight:200px;
+        width:200px;
+
     }
     nav ul{
         position: absolute;
@@ -598,8 +598,8 @@ hr{
     .col{
         text-align: center;
     }
-    h1 {
-        font-size: 42px;
+    .col-2 h1 {
+        font-size: 40px;
     }
     .col-2, .col-3, .col-4{
         flex-basis: 100%;
@@ -614,3 +614,10 @@ hr{
         font-size: 26px;
         line-height: 32px;
     }}
+    @media(max-width:460px){
+    header{
+        body{
+            flex-direction: column;
+    }
+    }
+}
