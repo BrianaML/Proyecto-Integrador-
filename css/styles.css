@@ -33,6 +33,10 @@ a{
 p{
     color:#555
 }
+.p-2{
+    margin-bottom: auto;
+    padding-left: 0px;
+}
 .container{
     max-width: 1300px;
     margin: auto;
@@ -152,6 +156,17 @@ button{
     padding: 8px 60px;
     margin: 15px 0;
     border-radius: 30px;
+}
+.maso{
+    display: grid;
+    background: #333232;
+    color: #fff;
+    padding: 8px 30px;
+    font-size: small;
+    text-align: center;
+    border-radius: 30px;
+    align-items: center;
+    width: 168px;
 }
 .index-des{
     font-weight: bold;
@@ -553,7 +568,7 @@ hr{
 .recover{
     background: #fff;
     height: 400px;
-    width: 450px;
+    width: 377px;
     position: relative;
     text-align: center;
     padding: 70px 0 0 0;
@@ -574,7 +589,9 @@ hr{
 .keys{
     padding: 0 20px 0 20px;
     top: 130px;
-
+}
+.bo{
+    width: 300px;
 }
 .bold{
     font-weight: 800;
@@ -608,6 +625,7 @@ hr{
     }
     .col-2 h1{
         font-size: 40px;
+        margin-top: 0px;
     }
     .col-2, .col-3, .col-4{
         flex-basis: 100%;
@@ -624,10 +642,32 @@ hr{
     }
     .col-2 img {
         max-width: 85%;
+        padding: 0 0;
+    }
+    .col-4 img {
+        height: 330px;
     }
     .cent {
         text-align: center;
-    .more{
-        
     }
+    .recover{
+        width: 319px;
+    }
+    .more{
+        margin: 12px 0;
+    }
+    .p-2{
+        margin-bottom: 35px;
+        padding-left: 10px;
+    }
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .col-4{
+        padding: 0px;
+    }
+    .body-cat {
+        padding-left: 0px; 
+        padding-right: 0px;}
     }
