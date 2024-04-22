@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
-    <!--LINK TO CSS-->
-    <link href="./css/styles.css" rel="stylesheet">
-    <!--LINK TO FONTS-->
+        <!--LINK TO CSS-->
+    <link rel="stylesheet" href="./css/styles.css">
+        <!--LINK TO FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--LINK TO ICONS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
-    <!--LINK TO ICONS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"></linkrel>
 </head>
 <body>
     <header>
@@ -33,56 +35,37 @@
                     </ul>
                 </nav>
             </div>
-            <br>
         </div>
+        <br>
     </header>
     <main>
         <div class="cart-pag">
             <div class="cart-container">
                 <div class="up">
                     <h3 class="shop">Shooping Cart</h3>
-                    <h3 class="chau">Quitar todo</h3>
                 </div>
-                <div class="items">
-                    <div class="cart-img">
-                        <img src="./imgs/producto.img/Two Tone Patch Detail Raglan Sleeve Jacket.jpg" height="" width="115x">
-                    </div>
-                    <div class="es">
-                        <h1 class="es-eso">Two</h1>
-                        <p class="es-eso">Tone</p>
-                        <p class="es-eso">Jacket</p>
-                        <h3 class="q-es-eso">Descripcion:</h3>
-                        <p class="q-es-eso">Campera estilo americana deportiva.</p>
-                        <div class="pago">$67</div>
-                        <div class="guardar">Guardar para mas tarde</div>
-                        <div class="sacar"><u>Quitar</u></div>
-                        <i class="fa-solid fa-heart"></i>
-                        <div class="suma">
-                            <div class="plus">+</div>
-                            <div class="solo">1</div>
-                            <div class="plus">-</div>
-                            <br>
-                            <hr class="cart-hr">
-                            <br class="cart-br">
-                            <div class="bye">
-                                <div class="total">
-                                    <div>
-                                        <div class="subtotal">Sub-Total</div>
-                                        <div class="items">1 item</div>
-                                    </div>
-                                    <div class="suma-total">$67</div>
-                                    <div class="suma-total">USD</div>
-                                </div>
-                                <br>
-                                <button><a class="chao" href="login.html">Checkout/Comprar</a></button>
-                            </div>
+        <div class="contenedor-carro">
+            <div class="new-cart">
+                <h1>Carrito</h1>
+            </div>
+                <div class="cart-img">
+                    <img src="./imgs/producto.img/Two Tone Patch Detail Raglan Sleeve Jacket.jpg" height="" width="115x">
+                    <h2 class="es-eso">Two tone jacket</h2>
+                    <h3 class="q-es-eso">Descripcion:</h3>
+                    <p class="q-es-eso">Campera estilo americana deportiva.</p>
+                    <div class="new-cart">
+                        <div class="plus">+</div>
+                        <div class="solo">1</div>
+                        <div class="plus">-</div>
+                        <div class="pago">$67 USD</div>
                         </div>
-                    </div>
-                </div>
-                    </div>
                     
-        </div>
-    </main>
+                    <div class="guardar">Guardar para mas tarde</div>
+                    <div class="sacar"><u>Quitar</u></div>
+                
+                    <button class="nn">Pagar</button>
+                </div>
+    </main>    
     <footer>
         <hr>
         <br>
@@ -110,6 +93,7 @@
                 </div>
             <hr>
         </div>
+        <a name="bottom"></a>
     </footer>
 </body>
 </html>
