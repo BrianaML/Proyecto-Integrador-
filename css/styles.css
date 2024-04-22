@@ -333,7 +333,6 @@ input:focus{
     align-items: center;
 }
 .shop{
-    font-size: 30px;
     font-weight: 700;
     color: #843d04;
     padding-bottom:10px ;
@@ -357,11 +356,7 @@ input:focus{
     text-align: center;
     
 }
-@media(max-width:460px){
-.es{
-    height: 100%;
-}
-}
+
 .es-eso{
     line-height: 10px;
     font-size: 32px;
@@ -628,9 +623,4 @@ hr{
     .col-2 img {
         max-width: 85%;
     }
-    .cent {
-        text-align: center;
-    .more{
-        
-    }
-    }
+}
