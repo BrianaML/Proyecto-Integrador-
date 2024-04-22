@@ -134,7 +134,7 @@ h3{
     transform: translateY(-5px);
 }
 .col-4 img{
-    height: 275px;
+    height: 350px;
     width: 100%;
 }
 button{
@@ -328,18 +328,19 @@ input:focus{
 }
 /*===============CART===============*/
 .cart-pag{
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 2%;
     background-image: url(https://i.pinimg.com/564x/d0/24/ce/d024ce5cb0c9c76a432dbbf7d2e15bbf.jpg);
-    height: 100vh;
+    height: 800px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .cart-container{
     height: 500px;
     background-color: #ffffff;
-    border-radius: 20px;
     box-shadow: 0 25px 40px #707478;
 }
 .up{
@@ -351,7 +352,6 @@ input:focus{
     align-items: center;
 }
 .shop{
-    font-size: 30px;
     font-weight: 700;
     color: #843d04;
     padding-bottom:10px ;
@@ -373,17 +373,15 @@ input:focus{
 }
 .cart-img{
     text-align: center;
-    width: 15%;
+    border-radius: 20px;
 }
-.es{
-    height: 100%;
-}
+
 .es-eso{
     line-height: 10px;
     font-size: 32px;
     font-weight: 800;
     color: #202020;
-    padding: 10px 12px 12px 12px;
+    padding: 10px 10px 12px 12px;
 }
 .q-es-eso{
     line-height: 16px;
@@ -418,18 +416,26 @@ input:focus{
 .solo{
     color: #202020;
     font-weight: 900;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #f4ecea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
+
 }
 .precio{
     height: 100%;
-    text-align: right;
+    text-align: center;
 }
 .pago{
     font-weight: 800;
     color: #202020;
     padding-top: 20px;
     font-size: 26px;
-    padding-bottom: 10px;
+
 }
 .guardar{
     padding-top: 5px;
@@ -490,6 +496,15 @@ input:focus{
 }
 hr{
     border: 100%;
+}
+.new-cart{
+display: flex;
+flex-wrap: wrap-reverse;
+justify-content:center ;
+}
+.contenedor-carro{
+    background: radial-gradient(#fff,#618b8a);
+    background-image: url(https://i.pinimg.com/564x/ee/de/1f/eede1fdb637b261cf1428fb6b57608c7.jpg);
 }
 /*===============LOGIN===============*/
 .form-container{
@@ -694,5 +709,8 @@ hr{
     .pink{  
     padding-left: 0px;
     padding-right: 0px;
+    }
+    .form-container {
+    padding: 0px 0px;
     }
 }
