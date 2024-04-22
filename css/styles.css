@@ -207,6 +207,7 @@ footer ul{
 .footer-k-2 img{
     width: 180px;
     margin-bottom: 20px;
+    height: 180px;
 }
 .footer-k-2 p{
     color: #dcbdbd;
@@ -228,6 +229,9 @@ footer ul{
     margin: 20px auto 20px;
     padding-left: 55px;
     padding-right: 55px;
+}
+.img-footer{
+    height: 180px;
 }
 /*===========CATEGORIA===============*/
 .catego{
@@ -641,7 +645,7 @@ justify-content:center ;
         font-size: 34px;
         margin-top: 0px;
     }
-    .col.col-2 {
+    .col.col-2{
         justify-content: space-evenly;
     }
     .col-2, .col-3, .col-4{
@@ -689,23 +693,27 @@ justify-content:center ;
     }
     .body-cat {
         padding-left: 0px; 
-        padding-right: 0px;}
-    .col img{
-        height: 333px;
+        padding-right: 0px;
     }
+    .col img {
+        height: 333px;
+    } 
     .pick{
         height: 198px;;
-}
-.s-img-col {
+    }
+    .s-img-col {
     display:flow-root;
     margin-top: 10px;
     margin-bottom: 56px;
-}
-.pink{
+    }
+    .pink{  
     padding-left: 0px;
     padding-right: 0px;
-}
-.form-container {
+    }
+    .form-container {
     padding: 0px 0px;
-}
+    }
+    .footer-k-2 img{
+        height: 180px;
+    }
 }
