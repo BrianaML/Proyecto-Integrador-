@@ -36,17 +36,16 @@
                 </nav>
             </div>
         </div>
-        <br>
     </header>
     <main>
         <div class="form-container">
-            <div class="login">
+            <div class="login" >
                 <p class="titulo">Login/Ingresar</p>
-                <form class="form" action="/login.html" method="POST" name="formLogin">
+                <form id="login" class="form" action="./index.html" method="get" name="formLogin">
                     <label for="email"></label>
-                    <input type="email" class="input" placeholder="Email" name="email" value="">
+                    <input id="email" type="email" class="input" placeholder="Email" name="email" value="">
                     <label for="password"></label>
-                    <input type="password" class="input" placeholder="Password" name="password" value="">
+                    <input id="password" type="password" class="input" placeholder="Password" name="password" value="">
                     <p>¿Olvidó su contraseña? <a href="recover.html" class="recuperar color">Recuperar contraseña</a></p>
                     <button class="nn" type="submit">Ingresar</button>
                 </form>
