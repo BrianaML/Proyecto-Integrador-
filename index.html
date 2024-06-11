@@ -16,17 +16,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!--LINK FOR DFER JS-->
+    <script defer src="./js/saludo.js"></script>
 </head>
 
     <!--COMIENZO DEL BODY -->
 <body>
     <header>
-        <div class="container">
+        <div class="container" >
             <div class="bar">
-                <div class="logo">
-                    <img src="./imgs/index.img/Minimalist typography brand Fashion Logo.png" width="125px" height="125px">
-                    <h1>Online Store</h1>
+                <div class="logo" >
+                    <div class="title"><img src="./imgs/index.img/Minimalist typography brand Fashion Logo.png" width="125px" height="125px">
+                        <h1>Online Store</h1></div>
+                    
+                    <div id="header"></div>
                 </div>
+                
                 <nav>
                     <ul id="MenuItems">
                         <li><a href="index.html">Home</a></li>
@@ -35,12 +41,13 @@
                         <li><a href="category.html">Hombre</a></li>
                         <li><a href="category.html">Mujer</a></li>
                         <li><a href="cart.html">Carrito</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="register.html">Registro</a></li>
+                        <li><a id="menu-login" href="login.html">Login</a></li>
+                        <li><a id="menu-register" href="register.html">Registro</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="col">
+            
+            <div class="col" >
                 <div class="col-2">
                     <h1 class="texto">NOBIA'S COLLECTION</h1>
                     <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -59,15 +66,15 @@
             <div class="categorias">
                 <div class="p-container">
                     <div class="col">
-                        <div class="col-3">
+                        <article class="col-3">
                             <img src="./imgs/index.img/Two Tone Patch Detail Raglan Sleeve Jacket.jpg">
-                        </div>
-                        <div class="col-3">
+                        </article>
+                        <article class="col-3">
                             <img src="./imgs/index.img/Get Men's Shorts with Summer Sale Discounts_.jpg">
-                        </div>
-                        <div class="col-3">
+                        </article>
+                        <article class="col-3">
                             <img src="./imgs/index.img/Hebillas LIZÂRT.jpg">
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -178,7 +185,7 @@
                 <!--ACCESORIOS-->
                 <h2 class="titu"><a href="category.html">ACCESORIOS</a></h2>
                     <section>
-                        <div class="col">
+                        <div class="col" id="jewerly-content">
                             <div class="col-4">
                                 <img src="./imgs/index.img/25 accesorios que no usas y ocupan espacio que deberías TIRAR ya.jpg" alt="p11">
                                 <h3><a href="category.html">Set de diademas</a></h3>
@@ -257,6 +264,6 @@
         </div>
         <a name="bottom"></a>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" src="./js/saludo.js"></script>
 </body>
 </html>

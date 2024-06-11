@@ -12,11 +12,7 @@ login.addEventListener(`submit`, function (e) {
     }else if(campoPassword.value.length < 6 ){
         alert("La contraseña debe tener al menos 6 caracteres")
     }else {
+        localStorage.setItem("email", campoEmail.value)
         this.submit()
     } 
-    localStorage.setItem("email", campoEmail.value)
 })
-
-
-//let emailToString= JSON.stringify(campoEmail)
-//localStorage.setItem('email', emailToString)

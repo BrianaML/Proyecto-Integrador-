@@ -11,6 +11,13 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+div.title{
+    width:326px;
+    align-items:center;
+    display:flex;
 }
 nav{
     text-align: right;
@@ -25,9 +32,22 @@ nav ul li{
     display: inline-block;
     margin-right: 20px;
 }
+
+h1{
+    display:flex;
+}
+
+#header{
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+
+    /*justify-content: space-around;*/
+}
 a{
     text-decoration: none;
     color: #555;
+    font-weight: 200;
 }
 p{
     color:#555
@@ -89,6 +109,7 @@ header.col{
 }
 .col img{
     width: 100%;
+    /* height: 300px; */
 }
 .p-container{
     max-width: 100%;
@@ -97,9 +118,10 @@ header.col{
     padding-right: 25px;
 }
 .col-4{
-    flex-basis: 20%;
+    flex-basis: 18%;
     padding: 10px;
     min-width: 200px;
+    max-width: 20%;
     margin-bottom: 50px;
     transition: transform 0.5s;
 }
@@ -135,9 +157,34 @@ h3{
     transform: translateY(-5px);
 }
 .col-4 img{
-    height: 350px;
-    width: 100%;
+    max-width:230px;
+    max-height:350px;
+    width: auto;
+    height: auto;
 }
+
+h3.prod-title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+ }
+
+div.image-container{
+    width:100%;
+    height:350px;
+}
+
+div.prod-fulldesc{
+    width:100%;
+    height:250px;
+}
+
+div.saludo{
+    font-size: small;
+}
+
 button{
     border-style: none;
     display: inline-block;
@@ -327,6 +374,9 @@ input:focus{
 .pink{
     padding-left: 55px;
     padding-right: 55px;
+}
+#id-cat{
+    text-transform: uppercase;
 }
 /*===============CART===============*/
 .cart-pag{

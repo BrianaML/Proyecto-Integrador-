@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"></linkrel>
+    <!--LINK FOR DFER JS-->
+    <script defer src="./js/saludo.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
+    <header >
+        <div class="container" id="header">
             <div class="bar">
                 <div class="logo">
                     <img src="./imgs/index.img/Minimalist typography brand Fashion Logo.png" width="125px" height="125px">
@@ -30,8 +32,8 @@
                         <li><a href="category.html">Hombre</a></li>
                         <li><a href="category.html">Mujer</a></li>
                         <li><a href="cart.html">Carrito</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="register.html">Registro</a></li>
+                        <li><a id="menu-login" href="login.html">Login</a></li>
+                        <li><a id="menu-register" href="register.html">Registro</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,9 +44,9 @@
             <div class="producto">
                 <div class="col">
                     <div class="col-2">
-                        <img src="./imgs/index.img/Two Tone Patch Detail Raglan Sleeve Jacket.jpg" alt="" width="100%">
+                        <img id="img-top" alt="" width="100%">
                         <div class="s-img-col" width="100%" heigh="400px">
-                            <div class="s-img-col-2">
+                            <!-- <div class="s-img-col-2">
                                 <img src="imgs/producto.img/images.jpg" width="" height="200px">
                             </div>
                             <div class="s-img-col-2 ">
@@ -52,29 +54,29 @@
                             </div>
                             <div class="s-img-col-2">
                                 <img src="imgs/producto.img/images (2).jpg" width="100%" height="200px">
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-2">
                         <p><a href="index.html" class="home">Home//</a>
-                        <a href="category.html" class="categoris">Categoria-MUJER</a></p>
-                        <h1>Two tone Jacket</h1>
-                        <h4>Precio: $67 USD.</h4>
+                        <a  id="id-cat" href="category.html" class="categoris a-category">Categoria-</a></p>
+                        <h1 id="title"></h1>
+                        <h4></h4>
                         <input type="number" value="1">
-                        <button class="boton-producto"><a href="./cart.html" class="boton-producto-color">Agregar al carrito</a></button>
-                        <h3>Descripción</h3>
+                        <button id="add-cart" class="boton-producto"><a href="./cart.html" class="boton-producto-color">Agregar al carrito</a></button>
+                        <h3>Descripción:</h3>
                         <br>
-                        <p>Campera estilo americana deportiva, dos colores.</p>
+                        <p id="descripcion"></p>
                     </div>
                 </div>
             </div>
                 <div class="col col-2">
                     <h2>Productos Relacionados</h2>
-                    <p><a class="linea" href="category.html">Ver Mas</a></p>
+                    <p><a class="linea a-category" href="category.html">Ver Mas</a></p>
                 </div>
                 <div class="categorias">
                     <div class="p-container">
-                        <div class="col">
+                        <div class="col" id="prod-relacionados">
                             <div class="col-3">
                                 <img src="./imgs/producto.img/707f6ab4a8646a99803954266e108b0b.jpg">
                             </div>
