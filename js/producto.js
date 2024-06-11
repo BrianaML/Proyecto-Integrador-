@@ -20,13 +20,11 @@ fetch(`https://fakestoreapi.com/products/${id}`)
         linkCategoria.innerText= data.category;
         document.querySelectorAll("a.a-category").forEach(function(categoryAnchor){
             categoryAnchor.setAttribute("href", `category.html?category=${data.category}`);
-
         });
     })
     .catch(function (error) {
         console.log(error);
     })
-
 
 function cargarProductosRelacionados(category){
     let counter = 0;
@@ -34,7 +32,7 @@ function cargarProductosRelacionados(category){
         .then(res=>res.json())
         .then(function(json){
             console.log(json)
-            let prodRelContainer = document.getElementById('prod-relacionados');
+            let prodRelContainer = document.querySelector('#prod-relacionados');
             prodRelContainer.textContent = '';
             json.forEach(function(item){
                 if(item.id != parseInt(id) && counter < 3){
@@ -47,7 +45,6 @@ function cargarProductosRelacionados(category){
                     counter++;
                 }
             });
-
         }).catch(function (error) {
             console.log(error);
         })
