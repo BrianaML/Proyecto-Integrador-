@@ -37,7 +37,7 @@ function cargarProductosRelacionados(category){
             json.forEach(function(item){
                 if(item.id != parseInt(id) && counter < 3){
                     let template = `<div class="col-3">
-                    <img src="${item.image}">
+                    <img src="${item.image}" height="300px">
                     </div>`;
                     let div = document.createElement('div');
                     div.innerHTML = template;
