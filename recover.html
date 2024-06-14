@@ -41,16 +41,20 @@
             <div class="contiene">
                 <div class="recover">
                 <p class="titulo">Recuperar contraseña</p>
-                <form class="keys">
-                    <input type="email" class="input bo" placeholder="Email" required>
-                    <input type="password" class="input bo" placeholder="Old password" required>
-                    <input type="password" class="input bo" placeholder="New Password" required>
+                <form class="keys" action="index.html.............." method="get" name="formRecover" id="recover">
+                    <label for="email"></label>
+                        <input id="campoEmail" type="email" class="input bo" placeholder="Email" name="email" value="" required>
+                    <label for="old-password"></label>
+                        <input id="campoNewPassword" type="password" class="input bo" placeholder="Old password" name="old-password" value="" required>
+                    <label for="new-password"></label>
+                        <input id="campoOldPassword" type="password" class="input bo" placeholder="New Password" name="new-password" value="" required>
                     <button class="nn bold">Recuperar</button>
-                    <br>
-                    <label>
-                        <input type="checkbox" class="terminos" required> 
-                        <span class="terminos">Quiero recuperar mi contraseña</span>
-                    </label>
+                    <p>
+                        <label>
+                            <input id="checkBox" type="checkbox" class="terminos" name="checkBox" value="" required> 
+                            <span class="terminos">Quiero recuperar mi contraseña</span>
+                        </label>
+                    </p>
                 </form>
                 </div>
             </div>
