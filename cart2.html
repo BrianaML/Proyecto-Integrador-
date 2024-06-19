@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrito</title>
+            <!--LINK TO CSS-->
+        <link rel="stylesheet" href="./css/styles.css">
+            <!--LINK TO FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <!--LINK TO ICONS-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"></linkrel>
+        <!--LINK FOR DFER JS-->
+        <script defer src="./js/saludo.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <div class="bar">
+                    <div class="logo">
+                        <img src="./imgs/index.img/Minimalist typography brand Fashion Logo.png" width="125px" height="125px">
+                        <h1>Online Store</h1>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="category.html">Electronica</a></li>
+                            <li><a href="producto.html">Accesorios</a></li>
+                            <li><a href="category.html">Hombre</a></li>
+                            <li><a href="category.html">Mujer</a></li>
+                            <li><a href="cart2.html">Carrito</a></li>
+                            <li><a id="menu-login" href="login.html">Login</a></li>
+                            <li><a id="menu-register" href="register.html">Registro</a></li>
+                        </ul>
+                    </nav>
+                    <div class="container-icon">
+                        <div class="container-cart-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+                            <div class="count-products">
+                                <span id="contador-productos">0</span>
+                            </div>
+                        </div>
+                        <div class="container-cart-products hiden-cart">
+                            <div class="row-product">
+                                <div class="cart-product">
+                                    <div class="info-cart-product">
+                                        <span class="cantidad-producto-carrito">1</span>
+                                            <p class="titulo-producto-carrito">zapatos</p>
+                                        <span class="precio-producto-carrito">$80</span>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                    </svg> 
+                                </div>
+                            </div>
+                            <div class="cart-total">
+                                <h3>Total</h3>
+                                <span class="total-pagar">$200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+        </header>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img src="./imgs/index.img/Two Tone Patch Detail Raglan Sleeve Jacket.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Two tone jacket</h2>
+                    <p class="price">$67</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="./imgs/index.img/Get Men's Shorts with Summer Sale Discounts_.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Short tono calido</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="./imgs/index.img/Grid Print Dip Hem Cuffed Blouse.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Camisa mantel</h2>
+                    <p class="price">$35</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="./imgs/index.img/0b9fb8c5-04f9-452e-ad42-dc0d50acb238.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Pantalon blanco</h2>
+                    <p class="price">$35</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="./imgs/index.img/Men's fashion.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Camisa terra</h2>
+                    <p class="price">$55</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <hr>
+                <div class="container">
+                    <div class="col">
+                        <div class="footer-k-1">
+                            <h3>Siguenos en:</h3>
+                            <p><a class="social" href="https://twitter.com/?lang=es" target="_blank">Twitter <i class="fab fa-twitter"></i></a>
+                                <a class="social" href="https://www.facebook.com/" target="_blank">Facebook <i class="fab fa-facebook-square"></i>
+                                <a class="social" href="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fwww.spotify.com%2Fmx%2Ffamily%2Fjoin%2Faddress%2F5ba81188aa2bCaC%2F" target="_blank">Spotify <i class="fab fa-spotify"></i></a>
+                                <a class="social" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram">Instagram </i></a></p>
+                        </div>
+                        <div class="footer-k-2">
+                            <img class="img-footer" src="./imgs/index.img/Minimalist typography brand Fashion Logo.png">
+                            <p>Copyright 2024©</p>
+                        </div>
+                        <div class="footer-k-3">
+                            <h3>Nosotros somos:</h3>
+                                <ul>
+                                    <li>Briana Mikkelsen-loth</li>
+                                    <li>Santiago del Castillo</li>
+                                    <li>Chantal Werner</li>
+                                </ul>
+                        </div>
+                    </div>
+                <hr>
+            </div>
+            <a name="bottom"></a>
+        </footer>
+        <script src="./js/cart.js"></script>
+    </body>
+</html>

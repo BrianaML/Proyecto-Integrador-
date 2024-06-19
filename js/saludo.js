@@ -8,15 +8,18 @@ document.addEventListener("DOMContentLoaded", function () {
         msjBienvenida.classList.add('saludo');
         let logoutLink = document.createElement(`button`);
         logoutLink.textContent = "Logout";
+        logoutLink.classList.add('saludo');
         logoutLink.href = "#";
         logoutLink.addEventListener("click", function () {
             localStorage.removeItem("email");
             location.reload();
         });
 
+        msjBienvenida.appendChild(logoutLink);
         header.appendChild(msjBienvenida);
-        header.appendChild(document.createTextNode(" "));
-        header.appendChild(logoutLink);
+        //header.appendChild(msjBienvenida);
+       // header.appendChild(document.createTextNode(" "));
+        //header.appendChild(logoutLink);//
 
         document.querySelector("#menu-login").style.display = "none"
         document.querySelector("#menu-register").style.display = "none"
