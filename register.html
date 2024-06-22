@@ -37,28 +37,23 @@
     <main>
         <div class="form-container">
             <div class="register">
-                    <p class="titulo">Registro</p>
-                    <form class="form" action="" method="get">
-                        <label for="name"></label>
-                            <input type="text" class="input" name="name" value="" placeholder="Name" required autofocus>
-                        <label for="fullname"></label>
-                            <input type="text" class="input" name="fullname" value="" placeholder="Username" required>
-                        <label for="date"></label>
-                            <input type="date" class="input" name="date" value="" placeholder="Date" required>
-                        <label for="email"></label>
-                            <input type="email" class="input" name="email" value="" placeholder="Email" required>
-                        <label for="password"></label>
-                            <input type="password" class="input" name="password" value="" placeholder="Password" required>
-                        <label for="re-password"></label>
-                            <input type="password" class="input" name="rePassword" value="" placeholder="Repetir Password" required>
-                        <button class="nn" type="submit">Registrarme</button>
-                        <p>
-                            <label>
-                                <input type="checkbox" class="terminos" required> 
-                                <span class="terminos">Términos y condiciones</span>
-                            </label>
-                        </p>
-                    </form>
+                <p class="titulo">Registro</p>
+                <form class="form" id="registerForm">
+                    <label for="email"></label>
+                    <input type="email" class="input" id="email" name="email" placeholder="Email">
+                    <label for="password"></label>
+                    <input type="password" class="input" id="password" name="password" placeholder="Password">
+                    <label for="re-password"></label>
+                    <input type="password" class="input" id="rePassword" name="rePassword" placeholder="Repetir Password">
+                    <button class="nn" type="submit">Registrarme</button>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="terminos" id="terminos" >
+                            <span class="terminos">Términos y condiciones</span>
+                        </label>
+                    </p>
+                    <p id="mensajeError" class="mensaje-error"></p>
+                </form>
                 <p class="ingresar check">¿Tiene cuenta? <span class="ingresar-link"><a class="color" href="./login.html">Login</a></span></p>
                 <div class="botones-container">
                     <div class="apple-ingresar-boton">
