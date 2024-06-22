@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (users) {
         let msjBienvenida= document.createElement("div");
-        msjBienvenida.textContent = `Bienvenid@: ${users}`;
+        msjBienvenida.textContent = `Bienvenido: ${users}`;
         msjBienvenida.classList.add('saludo');
         let logoutLink = document.createElement(`button`);
         logoutLink.textContent = "Logout";
