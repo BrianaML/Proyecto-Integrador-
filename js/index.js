@@ -4,11 +4,12 @@ document.addEventListener("DOMContentLoaded", function(){
     fetch('https://fakestoreapi.com/products/category/jewelery')
         .then(res=>res.json())
         .then(json=>cargarJoyas(json))
-        fetch(`https://fakestoreapi.com/products/category/men's clothing`)
-            .then(res=>res.json())
-            .then(json=>cargarRopaHombres(json))
-
+    fetch(`https://fakestoreapi.com/products/category/men's clothing`)
+        .then(res=>res.json())
+        .then(json=>cargarRopaHombres(json))
+    
 });
+
 function cargarRopaHombres(json) {
     let categoryContainer1 = document.querySelector('#man-content');
     categoryContainer1.textContent = '';
@@ -36,9 +37,8 @@ function cargarRopaHombres(json) {
         let div1= document.createElement ('div');
         div1.innerHTML = theme;
         categoryContainer1.appendChild(div1.firstChild)
-    })
+    })
 }
-
 
 
 
