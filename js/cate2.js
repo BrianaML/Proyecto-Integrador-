@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     let busqueda= location.search
     let queque= new URLSearchParams(busqueda);
-    let id= queque.get("id");
+    let category= queque.get("category");
     console.log(id);
 
-    fetch(`https://fakestoreapi.com/products/category/`)
+    fetch(`https://fakestoreapi.com/products/category/jewelery`)
         .then(function (res) {
             return res.json();
         })
