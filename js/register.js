@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     form.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevenir el envío del formulario
-
         let mensajes = [];
 
         if (emailField.value.trim() === '') {

@@ -1,15 +1,16 @@
-var categoria = '';
-
+let categoria = '';
 
 document.addEventListener("DOMContentLoaded", function(){
     fetch('https://fakestoreapi.com/products/category/jewelery')
         .then(res=>res.json())
         .then(json=>cargarJoyas(json))
 
-    //fetch('https://fakestoreapi.com/products/category/jewelery')
-      //  .then(res=>res.json())
-        //.then(json=>cargarRopaHombres(json))
+
 });
+
+
+
+
 
 function cargarJoyas (json){
     let categoryContainer = document.getElementById('jewerly-content');
@@ -29,5 +30,4 @@ function cargarJoyas (json){
         div.innerHTML = template;
         categoryContainer.appendChild(div.firstChild);
     });
-    
 }

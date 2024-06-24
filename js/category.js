@@ -1,53 +1,46 @@
-// category.js
-
 document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('category');
-
-    if (category) {
-        document.getElementById('categoryName').textContent = category;
-        fetchProductsByCategory(category);
+    
+    let queryStringC = location.search;
+    let queryStringObjC = new URLSearchParams(queryStringC);
+    let category = queryStringObjC.get("category");
+    
+    let categorias ={
+        'electronics': 'Electrónica',
+        'jewelery': 'Accesorios',
+        "men's clothing": 'Ropa de Hombre',
+        "women's clothing": 'Ropa de Mujer'
     }
 
-    async function fetchProductsByCategory(category) {
-        try {
-            const response = await fetch(`https://api.example.com/products?category=${category}`);
-            const products = await response.json();
-            displayProducts(products);
-        } catch (error) {
-            console.error('Error fetching products:', error);
-        }
-    }
+    let titu = document.querySelector('.cate-titu')
+    titu.innerHTML = `<h2 class="cate-titu"><a href="category.html">${category}</a></h2>`
+    let catTitu = categorias[category] || 'Categoría';
+    catTitu.textContent= catTitu;
 
-    function displayProducts(products) {
-        const productsList = document.getElementById('productsList');
-        productsList.innerHTML = '';
+    let prodList = document.querySelector('#container-products-cate');
 
-        products.forEach(product => {
-            const productCard = document.createElement('div');
-            productCard.className = 'product-card';
-            
-            const productTitle = document.createElement('h2');
-            productTitle.textContent = product.name;
-
-            const productImage = document.createElement('img');
-            productImage.src = product.image;
-            productImage.alt = product.name;
-
-            const productPrice = document.createElement('p');
-            productPrice.textContent = `$${product.price}`;
-
-            const productLink = document.createElement('a');
-            productLink.href = `productDetail.html?id=${product.id}`;
-            productLink.textContent = 'Ver detalle';
-            productLink.className = 'product-link';
-
-            productCard.appendChild(productImage);
-            productCard.appendChild(productTitle);
-            productCard.appendChild(productPrice);
-            productCard.appendChild(productLink);
-
-            productsList.appendChild(productCard);
-        });
-    }
-});
+    fetch(`https://fakestoreapi.com/products/category/` + category)
+            .then(function (res) {
+                return res.json()
+            })
+            .then(function (products) {
+                //console.log(products);
+                prodList.innerHTML = '';
+                    for (let i = 0; i < products.length; i++) {
+                        let pro = products[i];
+                        let template= document.createElement('div');
+                        template.className = "col-4";
+                        template.innerHTML = 
+                                    `<img src="${pro.image}" alt="">
+                                    <h3 class="cat-title"><a href="producto.html?id=${pro.id}">${products[i].title}</a></h3>
+                                    <p class="index-des">Descripción:</p>
+                                    <p>${pro.description}</p>
+                                    <p>$${pro.price.toFixed(2)}USD</p>
+                                    <h4><a href="producto.html?id=${pro.id}" class="ver-1">Ver mas</a></h4>
+                                </div>`; 
+                        prodList.appendChild(template);
+                            }
+                    })
+            .catch(function(error) {
+                console.log('Error al obtener la data:', error);
+            });
+}) 

@@ -17,9 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         msjBienvenida.appendChild(logoutLink);
         header.appendChild(msjBienvenida);
-        //header.appendChild(msjBienvenida);
-       // header.appendChild(document.createTextNode(" "));
-        //header.appendChild(logoutLink);//
 
         document.querySelector("#menu-login").style.display = "none"
         document.querySelector("#menu-register").style.display = "none"

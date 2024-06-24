@@ -204,6 +204,7 @@ button{
     padding: 8px 60px;
     margin: 15px 0;
     border-radius: 30px;
+    text-align: center;
 }
 .maso{
     display: grid;
@@ -307,6 +308,7 @@ footer ul{
     color: #555;
     padding-top: 20px;
     font-size: 30px;
+    text-transform: uppercase;
 }
 .cate-titu::after{
     content:'';
@@ -349,6 +351,7 @@ footer ul{
     display: inline-block;
     color: #fff;
     border-radius: 30px;
+    font-size: medium;
 }
 .boton-producto-color {
     color: #fff;
@@ -380,6 +383,33 @@ input:focus{
 #id-cat{
     text-transform: uppercase;
 }
+p#descripcion{
+    padding-top: 20px;
+}
+
+div.success-msg {
+    background-color: rgb(133, 221, 133);
+    color: rgb(46, 44, 44);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    display: inline-block;
+    font-size: small;
+}
+
+div.error-msg {
+    background-color: rgb(92, 84, 84);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    display: inline-block;
+    font-size: small;
+}
+
+
 /*===============CART===============*/
 .cart-pag{
     margin: 10;
@@ -636,6 +666,12 @@ justify-content:center ;
     font-size: 15px;
     color: #544e4e;
 }
+.mensaje-error{
+    color: #ff6200cf;
+    font-size: small;
+    text-decoration: underline;
+    text-align: center;
+}
 /* CART2*/
 .icon-cart{
     width: 40px;
@@ -787,7 +823,7 @@ margin: 30px;
 /*==================RECOVER===================*/
 .recover{
     background: #fff;
-    height: 400px;
+    height: 280px;
     width: 350px;
     position: relative;
     text-align: center;
@@ -799,11 +835,11 @@ margin: 30px;
 .contiene{
     display: flex;
     justify-content: center;
+    background: #c7c7c6;
 }
 .recov-fondo{
     padding: 50px;
-    background: radial-gradient(#fff,#618b8a);
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200616/pngtree-white-block-glow-background-image_339296.jpg);
+    background: #c7c7c6;
     background-size: 1800px;
 }
 .keys{
@@ -816,6 +852,17 @@ margin: 30px;
 .bold{
     font-weight: 800;
     color: #2d2d32;
+}
+.err-reco{
+    color: black;
+    font-size: larger;
+    text-decoration: none;
+    padding-top: 25px;
+}
+.ir-login{
+    text-transform: uppercase;
+    color: #670abd;
+    font-weight: 400;
 }
 /*=================RESPONSIVE=================*/
 @media screen and (max-width:321px){

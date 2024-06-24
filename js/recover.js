@@ -2,6 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('recover');
+    const titulo= document.querySelector('#recuperar-titu')
     const emailField = document.getElementById('campoEmail');
     const checkbox = document.getElementById('checkBox');
     const mensajeError = document.getElementById('mensajeError');
@@ -16,13 +17,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (!checkbox.checked) {
-            mensajes.push('Por favor acepte el campo Quiero recuperar mi contraseña.');
+            mensajes.push('Por favor acepte el campo "Quiero recuperar mi contraseña".');
         }
 
         if (mensajes.length > 0) {
             mensajeError.textContent = mensajes.join(' ');
         } else {
-            mensajeError.innerHTML = 'Recibirás un email con las instrucciones para recuperar tu contraseña. <a href="login.html">Ir al login</a>';
+            form.style.display = 'none';
+            titulo.style.display = 'none';
+            mensajeError.innerHTML = 'Recibirás un email con las instrucciones para recuperar tu contraseña. <p><a class="ir-login" href="login.html">Ir al login</a></p>';
         }
     });
 });
