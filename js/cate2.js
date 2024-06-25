@@ -2,23 +2,15 @@ document.addEventListener("DOMContentLoaded", function() {
     let busqueda= location.search
     let queque= new URLSearchParams(busqueda);
     let category= queque.get("category");
-    console.log(id);
-
-    fetch(`https://fakestoreapi.com/products/category/jewelery`)
-        .then(function (res) {
-            return res.json();
-        })
-        .then(function (data) {
-            cargarProductos(data.category);
-            let linkCat = document.querySelector("#linkCat");
-            linkCat.innerText= data.category;
-            document.querySelectorAll("a.a-cat").forEach(function(categoryAnchor){
-                categoryAnchor.setAttribute("href", `category.html?category=${data.category}`);
-            });
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
+    
+    console.log(category);
+    
+    cargarProductos(category);
+    let linkCat = document.querySelector("#linkCat");
+    linkCat.innerText = category;
+    document.querySelectorAll("a.a-cat").forEach(function(categoryAnchor) {
+        categoryAnchor.setAttribute("href", `category.html?category=${category}`);
+    });
 
         function cargarProductos(category){
             fetch(`https://fakestoreapi.com/products/category/${category}`)
@@ -32,19 +24,20 @@ document.addEventListener("DOMContentLoaded", function() {
                     data.forEach(function(item){
                     let template= document.createElement('div');
                         template.className = "col-4";
+                    let truncaDes= item.description.length > 100 ? item.description.substring(0, 100) + '...' : item.description;
                         template.innerHTML = `
                             <img src="${item.image}" alt="">
                             <h3 class="cat-title"><a href="producto.html?id=${item.id}">${item.title}</a></h3>
                             <p class="index-des">Descripción:</p>
-                            <p>${item.description}</p>
+                            <p>${truncaDes}</p>
                             <p>$${item.price.toFixed(2)}USD</p>
                             <h4><a href="producto.html?id=${item.id}" class="ver-1">Ver mas</a></h4>
-                        `; 
-                    prodList.append(template); 
+                        `;
+                    prodList.append(template);
                 });
-                }).catch(function (error) {
+        }).catch(function (error) {
                     console.log(error);
                 })
-            }  
+            }
+        });
     //cargarProductos(category);
-})

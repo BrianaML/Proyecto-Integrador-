@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             form.style.display = 'none';
             titulo.style.display = 'none';
-            mensajeError.innerHTML = 'Recibirás un email con las instrucciones para recuperar tu contraseña. <p><a class="ir-login" href="login.html">Ir al login</a></p>';
+            mensajeError.innerHTML = '<div class="err-reco">Recibirás un email con las instrucciones para recuperar tu contraseña. <p><a class="ir-login" href="login.html">Ir al login</a></p></div>';
         }
     });
 });
