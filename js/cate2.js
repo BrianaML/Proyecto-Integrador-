@@ -24,11 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     data.forEach(function(item){
                     let template= document.createElement('div');
                         template.className = "col-4";
+                    let truncaDes= item.description.length > 100 ? item.description.substring(0, 100) + '...' : item.description;
                         template.innerHTML = `
                             <img src="${item.image}" alt="">
                             <h3 class="cat-title"><a href="producto.html?id=${item.id}">${item.title}</a></h3>
                             <p class="index-des">Descripción:</p>
-                            <p>${item.description}</p>
+                            <p>${truncaDes}</p>
                             <p>$${item.price.toFixed(2)}USD</p>
                             <h4><a href="producto.html?id=${item.id}" class="ver-1">Ver mas</a></h4>
                         `;
