@@ -44,7 +44,7 @@ h1{
     padding-right: 20px;
 }
 .continuacion{
-    background:radial-gradient(#fff, #f1b6b6);
+    background:radial-gradient(#fff, #6e6e6e);
 }
 a{
     text-decoration: none;
@@ -86,14 +86,14 @@ p{
 }
 .more{
     display: inline-block;
-    background: #cb9191;
+    background: #000000;
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
 }
 header{
-    background: radial-gradient(#fff,#f1b6b6);
+    background: radial-gradient(#fff,#ffffff);
 }
 header.col{
     margin-top: 70px;
@@ -105,8 +105,8 @@ header.col{
     margin: 70px 0;
 }
 .col-3{
-    flex-basis: 30%;
-    min-width: 250px;
+    flex-basis: 20%;
+    min-width: 150px;
     margin-bottom: 30px;
 }
 .col img{
@@ -228,7 +228,7 @@ button{
 }
 /*======================FOOTER============================*/
 footer{
-    background: #843d04;
+    background: #565454;
     color: #dcbdbd;
     font-size: 14px;
     padding: 60px 0 20px;
